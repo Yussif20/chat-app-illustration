@@ -1,39 +1,22 @@
 :root {
   // TEXT
-  --pale-violet: hsl(
-    276,
-    100%,
-    81%
-  ); // - Pale Violet (sub-heading at the top of the app UI):
-  --moderate-violet: hsl(
-    276,
-    55%,
-    52%
-  ); // - Moderate Violet (chat on the left):
-  --desaturated-dark-violet: hsl(271, 15%, 43%); // -  (chat on the right):
-  --grayish-blue: hsl(206, 6%, 79%); // - Grayish Blue (placeholder text):
+  --pale-violet: hsl(276, 100%, 81%);
+  --light-pale-violet: hsl(276, 100%, 95%);
+  --moderate-violet: hsl(276, 55%, 52%);
+  --desaturated-dark-violet: hsl(271, 15%, 43%);
+  --grayish-blue: hsl(206, 6%, 79%);
   --very-dark-desaturated-violet: hsl(
     271,
     36%,
     24%
   ); // -(main heading): ++  -(submit button background)
-  --dark-grayish-violet: hsl(
-    270,
-    7%,
-    64%
-  ); // - Dark Grayish Violet (paragraph):
-
-  // GRADIENTS
-  --light-magenta: hsl(293, 100%, 63%); // - Light Magenta:
-  --light-violet: hsl(264, 100%, 61%); // - Light Violet:
+  --dark-grayish-violet: hsl(270, 7%, 64%);
+  --light-magenta: hsl(293, 100%, 63%);
+  --light-violet: hsl(264, 100%, 61%);
 
   // COLORS
-  --white: hsl(0, 0%, 100%); // - White:
-  --light-grayish-violet: hsl(
-    270,
-    20%,
-    96%
-  ); // - Light Grayish Violet (app background):
+  --white: hsl(0, 0%, 100%); //
+  --light-grayish-violet: hsl(270, 20%, 96%);
   --very-light-magenta: hsl(
     289,
     100%,

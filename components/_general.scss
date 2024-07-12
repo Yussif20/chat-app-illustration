@@ -1,3 +1,18 @@
 body {
   font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+}
+.container {
+  background-color: var(--light-grayish-violet);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.page-layout {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.4rem;
 }
