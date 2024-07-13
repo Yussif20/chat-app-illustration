@@ -1,17 +1,31 @@
 .chat {
-  // height: 70rem;
   width: 35rem;
   outline-style: solid;
   outline-color: var(--white);
-  outline-width: 1rem;
+  outline-width: 1.2rem;
   border-radius: 1.5rem;
   background-color: var(--light-grayish-violet);
+}
+.chat::before {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(
+    to bottom right,
+    var(--light-violet),
+    var(--light-magenta)
+  );
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 80%;
+  border-radius: 0 0 20rem 20rem;
+  z-index: -1;
 }
 .chat__header {
   display: flex;
   align-items: center;
   gap: 1.4rem;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2.5rem;
   background-image: linear-gradient(
     to bottom right,
     var(--light-violet),
@@ -19,6 +33,25 @@
   );
   color: var(--pale-violet);
   border-radius: 1.5rem 1.5rem 0 0;
+  position: relative;
+}
+.chat__header::before {
+  background-color: var(--white);
+  content: "";
+  position: absolute;
+  top: -1.2rem;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  border-radius: 1.5rem;
+  width: 50%;
+  height: 3.6rem;
+}
+.chat__header-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .chat__header-pic {
   width: 5rem;
@@ -78,10 +111,50 @@
   display: flex;
   justify-content: space-between;
 }
+.offer-circle {
+  color: var(--light-magenta);
+  margin-right: 0.5rem;
+}
+.input__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 .chat__input {
+  width: 100%;
   padding: 1.2rem;
   border-radius: 1.2rem;
   outline: none;
   border: none;
   background-color: var(--white);
+}
+.send-arrow {
+  background-color: var(--very-dark-desaturated-violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  right: 0.5rem;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 900px) {
+  .chat::before {
+    position: absolute;
+    left: -30%;
+    width: 50%;
+    height: 70%;
+    border-radius: 0 0 30rem 30rem;
+  }
+}
+@media (max-width: 500px) {
+  .chat::before {
+    position: absolute;
+    left: -30%;
+    width: 60%;
+    height: 50%;
+  }
 }

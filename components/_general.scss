@@ -1,18 +1,42 @@
 body {
   font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 .container {
-  background-color: var(--light-grayish-violet);
+  padding: 12rem 6rem;
   width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
+.container::after {
+  content: "";
+  background-color: var(--light-grayish-violet);
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+
 .page-layout {
-  margin: 0 auto;
+  min-width: 80vw;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 2.4rem;
+  justify-content: center;
+  gap: 10rem;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+  .container {
+    padding: 3rem;
+  }
+  .page-layout {
+    min-width: 90vw;
+    flex-direction: column;
+  }
 }

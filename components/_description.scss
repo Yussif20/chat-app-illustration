@@ -10,3 +10,9 @@
   color: var(--dark-grayish-violet);
   line-height: 1.5;
 }
+@media (max-width: 900px) {
+  .description {
+    text-align: center;
+    width: 70%;
+  }
+}
